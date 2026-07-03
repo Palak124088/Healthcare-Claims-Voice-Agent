@@ -41,7 +41,6 @@ The following capabilities are not included in the current project:
 ---
 
 
----
 
 ## Project Deliverables
 
