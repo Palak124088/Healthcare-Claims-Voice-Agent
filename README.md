@@ -32,10 +32,11 @@ release/      → Demo, Presentation & Deliverables
 
 ## Team
 
+```text
 -Palak & Pragati : BA & QA
 -Ramaz, Rythm & Neha : Developers
 
-
+```
 
 
 
