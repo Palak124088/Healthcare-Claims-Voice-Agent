@@ -107,11 +107,6 @@ The claim is successfully submitted and a confirmation is provided.
 **Description:**
 The conversation is transferred to a human representative when the issue cannot be resolved automatically or when requested by the member.
 
-**Flow**
-
-<img width="1086" height="1448" alt="ChatGPT Image Jul 7, 2026, 07_00_40 PM" src="https://github.com/user-attachments/assets/00f94462-b4bb-495f-933b-6af34cd4873e" />
-
-
 **Expected Outcome**
 
 The conversation is handed over with the available context.
