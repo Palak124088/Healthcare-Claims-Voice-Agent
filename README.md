@@ -1,4 +1,4 @@
-# 🏥 Healthcare Claims Voice Agent
+# Healthcare Claims Voice Agent
 
 ## About the Project
 
@@ -34,7 +34,7 @@ release/      → Demo, Presentation & Deliverables
 
 ```text
 -Palak & Pragati : BA & QA
--Ramaz, Rythm & Neha : Developers
+-Ramaz, RHythm & Neha : Developers
 
 ```
 
