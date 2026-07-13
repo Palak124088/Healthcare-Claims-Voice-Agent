@@ -34,7 +34,7 @@ release/      → Demo, Presentation & Deliverables
 
 ```text
 -Palak & Pragati : BA & QA
--Ramaz, RHythm & Neha : Developers
+-Ramaz, Rhythm & Neha : Developers
 
 ```
 
