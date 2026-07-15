@@ -34,4 +34,3 @@ router = APIRouter(
         "Single entry point for the voice agent. Accepts raw spoken or typed "
         "inputs and a session id. The backend normalizes, validates (including "
         "a real calendar check on the date of birth), counts failed attempts in "
-        }
