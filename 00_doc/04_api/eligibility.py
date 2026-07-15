@@ -34,27 +34,4 @@ def check_eligibility(request: EligibilityRequest):
 
     if not eligibility:
         return none_found("Eligibility information not found.")
-
-    return found(eligibility, "Eligibility retrieved successfully.")
-
-
-@router.get(
-    "/{member_id}",
-    summary="Get Eligibility",
-    description="Returns eligibility details using Member ID (spoken or typed). " + STATUS_DOC,
-)
-def get_eligibility(member_id: str = Path(...)):
-
-    response, db_member_id = resolve_member(member_id)
-    if response:
-        return response
-
-    # Eligibility is keyed by the MEM-prefixed member id (Eligibility.id == "MEM1001").
-    eligibility, err = db_guard(DatabaseService.get_eligibility, db_member_id)
-    if err:
-        return err
-
-    if not eligibility:
-        return none_found("Eligibility not found.")
-
     return found(eligibility, "Eligibility retrieved successfully.")
