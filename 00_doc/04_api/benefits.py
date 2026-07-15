@@ -34,27 +34,4 @@ def get_benefits(request: BenefitsRequest):
 
     if not benefits:
         return none_found("Benefits information not found.")
-
-    return found(benefits, "Benefits retrieved successfully.")
-
-
-@router.get(
-    "/{member_id}",
-    summary="Get Benefits",
-    description="Returns benefits using Member ID (spoken or typed). " + STATUS_DOC,
-)
-def get_benefits_by_member(member_id: str = Path(...)):
-
-    response, db_member_id = resolve_member(member_id)
-    if response:
-        return response
-
-    # Benefits are keyed by the MEM-prefixed member id (Benefit.id == "MEM1001").
-    benefits, err = db_guard(DatabaseService.get_benefits, db_member_id)
-    if err:
-        return err
-
-    if not benefits:
-        return none_found("Benefits not found.")
-
     return found(benefits, "Benefits retrieved successfully.")
