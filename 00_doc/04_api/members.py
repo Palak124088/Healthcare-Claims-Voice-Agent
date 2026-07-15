@@ -34,30 +34,4 @@ def get_member_details(member_id: str = Path(...)):
             "plan": member.get("plan"),
             "email": member.get("email"),
             "phone": member.get("phone"),
-            "dob": member.get("dob"),
-            "zipCode": member.get("zipCode"),
-            "createdAt": member.get("createdAt"),
-            "updatedAt": member.get("updatedAt"),
-        },
-        "Member details retrieved successfully.",
-    )
-
-
-@router.get(
-    "/",
-    summary="Get All Members",
-    description="Returns all registered members.",
-)
-def get_all_members():
-
-    members, err = db_guard(DatabaseService.get_all_members)
-    if err:
-        return err
-
-    return {
-        "status": "found" if members else "none_found",
-        "success": True,
-        "message": "Members retrieved successfully.",
-        "count": len(members),
-        "data": members,
-    }
+        }
